@@ -408,6 +408,8 @@ influxdb = [
 ]
 jdbc = [
     'jaydebeapi>=1.1.1',
+    # Jpype1 conflicts with jaydebeapi for Airflow 2.3.*
+    'jpype1<1.4.0',
 ]
 jenkins = [
     'python-jenkins>=1.0.0',
